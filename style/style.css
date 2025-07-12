@@ -1,28 +1,144 @@
-/* nav style */
-.container{
-    display: flex;
-    margin-right: 50px;
-    justify-content: space-between;
-    
+.secondary-bg{
+    background-color: #FFF8F3;
 }
-.logo{
-     color: #4A43F7;
+.text-primary{
+    color: #FD6E0A;
+}
+.dark-2{
+    color: #474747;
 }
 
 .btn-primary{
     background-color: #4A43F7;
     font-weight: bold;
+    font-size: 20px;
     color: white;
-    padding: 5px 10px ;
-    border-radius: 5px;
     border: none;
-    
+    padding: 18px 35px;
+    border-radius: 5px;
 }
-/* banner style */
-.banner-tittle{
+
+.section-title{
+    font-size: 35px;
     font-weight: bold;
-    font-size: 55px;
-    
-
-
+    color: #181818;
 }
+
+.section-description{
+    font-size: 18px;
+    color: #757575;
+}
+
+.text-center{
+    text-align: center;
+}
+/* header  */
+.header{
+    background-image: url('../Assets/Hero-bg.png');
+    
+    background-position: top left, bottom right;
+}
+
+/* Nav styles */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 200px;
+}
+
+.nav-title{
+    font-weight:800;
+    font-size: 45px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.action{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 200px;
+    background-color: #FFFFFF;
+    
+    
+}
+.subtitle{
+    font-size: large;
+}
+.actioncontent{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+         .Productiveusercenter{
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+            background-color: #FFFFFF; /* Optional: A light background for context */
+            margin: 0px;
+        }
+
+        .stats-container {
+            background-color: #e6e6ff; /* Light purple background matching the image */
+            padding: 80px 400px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 800px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Title styling */
+        .stats-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 50px;
+        }
+
+        /* Statistics grid layout */
+        .stats-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 40px;
+        }
+
+        /* Individual statistic item */
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Number styling (50K, 2M+, 95%) */
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            color: #4a4af0; /* A vibrant blue/purple color for the numbers */
+            margin-bottom: 5px;
+        }
+
+        /* Description styling (Active Users, Focus Sessions, Satisfaction Rate) */
+        .stat-description {
+            font-size: 16px;
+            color: #555;
+            text-transform: capitalize;
+        }
