@@ -281,4 +281,146 @@ nav li a {
 
 
 
+        .Reviewersamir {
+            font-family: sans-serif;
+            background-color: #f0f2f5; /* Light greyish background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px 20px;
+            box-sizing: border-box;
+        }
+
+        .testimonials-section {
+            text-align: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .testimonials-section h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 50px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .testimonial-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+          .stars {
+            color: #ffc107; /* Gold color for stars */
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .stars .fa-star {
+            margin-right: 2px;
+        }
+
+        .testimonial-card h3 {
+            font-size: 1.4em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .testimonial-card p {
+            font-size: 1em;
+            color: #666;
+            line-height: 1.6;
+            flex-grow: 1; /* Allows the paragraph to take available space */
+            margin-bottom: 20px;
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+            margin-top: auto; /* Pushes content to the bottom */
+        }
+
+         .reviewer-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+            border: 2px solid #eee;
+        }
+
+        .reviewer-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .reviewer-details .name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .reviewer-details .date {
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .testimonials-section h2 {
+                font-size: 2em;
+                margin-bottom: 30px;
+            }
+
+              .testimonials-grid {
+                grid-template-columns: 1fr; /* Stack cards on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .testimonial-card {
+                padding: 20px;
+            }
+
+            .testimonial-card h3 {
+                font-size: 1.2em;
+            }
+
+            .testimonial-card p {
+                font-size: 0.95em;
+            }
+
+            .reviewer-info img {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
