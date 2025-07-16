@@ -106,7 +106,7 @@ nav li a {
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
-        /* Title styling */
+       
         .stats-title {
             font-size: 24px;
             font-weight: 600;
@@ -114,31 +114,171 @@ nav li a {
             margin-bottom: 50px;
         }
 
-        /* Statistics grid layout */
+        
         .stats-grid {
             display: flex;
             justify-content: space-around;
             gap: 40px;
         }
 
-        /* Individual statistic item */
+        
         .stat-item {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        /* Number styling (50K, 2M+, 95%) */
+        
         .stat-number {
             font-size: 48px;
             font-weight: 700;
-            color: #4a4af0; /* A vibrant blue/purple color for the numbers */
+            color: #4a4af0;
             margin-bottom: 5px;
         }
 
-        /* Description styling (Active Users, Focus Sessions, Satisfaction Rate) */
+        
         .stat-description {
             font-size: 16px;
             color: #555;
             text-transform: capitalize;
         }
+
+
+
+        .body{
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+        }
+
+
+        .container {
+            display: flex;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            width: 100%;
+            padding: 65px;
+            box-sizing: border-box;
+            padding-bottom: 100px;
+            padding-top: 100px;
+        }
+
+        .left-panel {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 40px;
+        }
+
+        .left-panel h1 {
+            font-size: 3em;
+            color: #333;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .right-panel {
+            flex: 1;
+            padding-left: 40px;
+            border-left: 1px solid #eee; 
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .form-group input[type="email"],
+        .form-group input[type="text"],
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1em;
+            box-sizing: border-box; 
+        }
+
+        .form-group input[type="email"]::placeholder,
+        .form-group input[type="text"]::placeholder,
+        .form-group textarea::placeholder {
+            color: #aaa;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 15px;
+            background-color: #5b42f3; 
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #4a34d3; 
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .left-panel {
+                padding-right: 0;
+                padding-bottom: 30px;
+            }
+
+            .left-panel h1 {
+                font-size: 2.5em;
+            }
+
+            .right-panel {
+                padding-left: 0;
+                border-left: none;
+                border-top: 1px solid #eee;
+                padding-top: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .left-panel h1 {
+                font-size: 2em;
+            }
+
+            .submit-button {
+                font-size: 1em;
+                padding: 12px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
